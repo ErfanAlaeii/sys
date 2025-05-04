@@ -1,0 +1,117 @@
+/*
+const getGenerate = (async (req, res, next) => {
+    tempResponse = await generate(model.schema, req.params.param2);
+    response = []
+    tempResponse.forEach(element => {
+        delete element._id
+        delete element.createdAt
+        delete element.createdBy
+        delete element.modifiedAt
+        delete element.modifiedBy
+        delete element.deleted
+        delete element.deletedAt
+        delete element.deletedBy
+        delete element.hidden
+        delete element.hiddendAt
+        delete element.hiddenBy
+        delete element.locked
+        delete element.lockedAt
+        delete element.lockedBy
+        delete element.__v
+        response.push(element)
+    });
+    return response
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+/*
+const putApi = (async (req, res, next) => {
+    await connect()
+    response = await putSingle(req, res, next)
+    res.json(response);
+
+}
+)
+
+const putSingle = (async (req, res, next) => {
+    
+    await model.model.findOneAndReplace({ _id: req.params.param1 }, req.body, { data: req.body, new: true })
+        .then(async data => {
+            response = {
+                status: 'success',
+                data: data,
+            }
+        }).catch(async error => {
+            response = {
+                status: 'error',
+                error: await errorHandler(error),
+            }
+        })
+    return response
+
+})
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+case 'markeds':
+response = await getSearch(req, next, model, { marked: true });
+break;
+case 'lastMarkeds':
+response = await getSearch(req, next, model, {}, { "markedAt": -1 });
+break;
+
+case 'unmarkeds':
+response = await getSearch(req, next, model, { marked: false });
+break;
+case 'flaggeds':
+response = await getSearch(req, next, model, { flagged: true });
+break;
+case 'lastFlaggeds':
+response = await getSearch(req, next, model, {}, { "flaggedAt": -1 });
+break;
+case 'unflaggeds':
+response = await getSearch(req, next, model, { flagged: false });
+break;
+case 'favoriteds':
+response = await getSearch(req, next, model, { favorited: true });
+break;
+case 'lastFavoriteds':
+response = await getSearch(req, next, model, {}, { "favoritedAt": -1 });
+break;
+case 'unfavoriteds':
+response = await getSearch(req, next, model, { favorited: false });
+break;
+*/
+/*
+case 'generate':
+    response = await getGenerate(req, res, next)
+    break;
+*/
